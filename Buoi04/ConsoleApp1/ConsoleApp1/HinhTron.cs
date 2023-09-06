@@ -9,48 +9,48 @@ namespace ConsoleApp1
     internal class HinhTron
     {
         private ToaDo tam;
+
         public ToaDo Tam
         {
             get { return tam; }
             set { tam = value; }
         }
+        private double bankinh;
 
-        private double BanKinh;
-
-        public double bankinh
+        public double Bankinh
         {
-            get { return BanKinh; }
-            set { BanKinh = value; }
+            get { return bankinh; }
+            set { bankinh = value; }
         }
-
-
         public HinhTron()
         {
             Tam = new ToaDo();
             bankinh = 0;
             Tam.name = "Hinh Tron";
         }
-
-
-
-        public HinhTron(ToaDo tam, double BanKinh)
+        public HinhTron(ToaDo tam, double bkinh)
         {
-            Tam = tam;
-            bankinh = BanKinh;
-            tam.name = "Hinh Tron";
-
+           this.Tam = tam;
+            this.bankinh = bkinh;
+            this.Tam.name = "Hinh Tron";
+        }
+        public double tinhChuVi()
+        {
+            return 2 * 3.14 * bankinh;
+           
+        }
+        public double tinhDienTinh()
+        {
+            return 3.14 * bankinh * bankinh;
         }
 
-        public void tinhChuVi()
-        {
-            var chuvi = 2 * 3.14 * bankinh;
-            Console.WriteLine("Chu Vi" + chuvi);
-        }
-        public void tinhDienTinh()
-        {
-            var tinhbankinh = 3.14 * bankinh * bankinh;
-            Console.WriteLine("Dien Tich hinh tron la: " + tinhbankinh);
 
+        public void ToString()
+        {
+           
+            Console.WriteLine("\n CHu Vi :  " + tinhChuVi());
+            Console.WriteLine("\n Dien Tich : " + tinhDienTinh());
+           
         }
 
 

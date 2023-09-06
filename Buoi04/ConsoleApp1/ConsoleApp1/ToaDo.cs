@@ -29,11 +29,10 @@ namespace ConsoleApp1
         }
 
         public ToaDo() { }
-        public ToaDo(string name, float x, float y)
+        public ToaDo(float x, float y)
         {
-            X = x;
-            Y = y;
-            Name = name;
+           this.X = x;
+            this.Y = y;
         }
 
     }

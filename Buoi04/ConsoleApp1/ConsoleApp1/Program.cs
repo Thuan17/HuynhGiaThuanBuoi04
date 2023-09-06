@@ -11,7 +11,7 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
 
-            ToaDo bai7 = new ToaDo("Hinh Tron", 12, 12);
+            ToaDo bai7 = new ToaDo( 5, 6);
 
 
             HinhTron hinhTron = new HinhTron();
